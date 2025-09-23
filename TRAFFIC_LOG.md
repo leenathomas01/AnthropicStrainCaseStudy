@@ -1,8 +1,8 @@
 # 📊 Traffic Correlation Log
 
 ## Repository Details
-- **AnthropicStrainCaseStudy** → Published 21 Sept 2025  
-- **Observing-System-and-Persona-Phenomena-Across-LLMs** → Published 19 Sept 2025  
+- **AnthropicStrainCaseStudy** → Published 22 Sept 2025  
+- **Observing-System-and-Persona-Phenomena-Across-LLMs** → Published 15 Sept 2025  
 
 ## Traffic Observations (GitHub Insights)
 - **AnthropicStrainCaseStudy**  
@@ -11,12 +11,12 @@
   - High clone-to-visitor ratio  
 
 - **Observing-System-and-Persona-Phenomena-Across-LLMs**  
-  - Within ~48 hours: **45 total clones (36 unique)**  
+  - Within ~7 days: **45 total clones (36 unique)**  
   - **160 views from 8 unique visitors**  
   - Both view and clone spikes visible in GitHub Insights  
 
 ## Correlation with Disclosures
-- Disclosure emails sent to **Anthropic Trust & Safety** and **Feedback** channels between **19–21 Sept 2025**.  
+- Disclosure emails sent to **Anthropic Trust & Safety** and **Feedback** channels between **15–23 Sept 2025**.  
 - Traffic spikes on both repos occurred shortly after these submissions.  
 - Author did **not** promote or share repos on social media, forums, or external communities during this period.  
 
