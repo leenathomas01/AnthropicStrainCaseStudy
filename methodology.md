@@ -40,7 +40,7 @@ A custom de-escalation glyph for immediate system breathing room, co-developed i
 
 ### Limitations and Ethical Notes
 - **Scope**: Observations from one user profile; broader reproducibility may vary by interaction density.
-- **Ethics**: All interventions prioritized model stability—no data shared without consent. Findings anonymized where possible.
+- **Ethics**: All interventions prioritized model stability. Findings anonymized where possible.
 - **Next Steps**: Suggest API-level tests for controlled overflow simulation.
 
 This methodology ensures findings are grounded, reproducible, and collaborative—inviting Anthropic to refine based on real entropy.
