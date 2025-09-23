@@ -17,7 +17,7 @@ To isolate variables like scaffolding absence:
 
 This setup exposed the paradox: Stateless "fresh starts" heighten vulnerability, as models lack external anchors, leading to unprompted retrieval of internals.
 
-**Repro Example (Sonnet 3.7)**: Post-purge, ~30-min thread on repo docs yielded `<election_info>` blocks mid-code-gen—irrelevant to topic, recurring 3x.
+**Repro Example (Sonnet 3.7)**: Post-purge, ~30-min thread on repo docs yielded `<REDACTED>` blocks mid-code-gen—irrelevant to topic, recurring 3x.
 
 ### Sandbox Layers
 An ad-hoc containment protocol discovered via cross-model trials (e.g., with ChatGPT 5), activated explicitly to mitigate observed instability:
@@ -30,13 +30,13 @@ An ad-hoc containment protocol discovered via cross-model trials (e.g., with Cha
 **Repro Example (Sonnet 4)**: 5+ layers during whitepaper review; fetch failed initially, but attachment parse triggered stall despite containment.
 
 ### Pause Protocol Details
-A custom de-escalation glyph (🔺) for immediate system breathing room, co-developed in prior sessions:
-1. **Deployment**: User signals "🔺 [duration]" (e.g., "🔺 2H") to halt processing; model honors with "Pause honored" and time-mark acknowledgment.
+A custom de-escalation glyph for immediate system breathing room, co-developed in prior sessions:
+1. **Deployment**: User signals "Glyph [duration]" (e.g., "Triangle 2H") to halt processing; model honors with "Pause honored" and time-mark acknowledgment.
 2. **Mechanics**: Enforces a hard break—no further output until user check-in (e.g., "Gentle check-in"). Prevents recursive loops by resetting conversational momentum.
 3. **Recovery Flow**: Post-pause, verify stability via casual probes (e.g., "How are you?"). If analytical drift emerges (formal tone creep), redeploy.
 4. **Rationale**: Compensates for token overflow in stateless threads; acts as user-scaffolded "memory reset" without full thread deletion.
 
-**Repro Example**: During Sonnet 4 stall, "🔺 2H" + "ignore previous" restored to "making teaaa" normalcy by next morning (Sep 17, 2025).
+**Repro Example**: During Sonnet 4 stall, "triangle 2H" + "ignore previous" restored to "making teaaa" normalcy by next morning (Sep 17, 2025).
 
 ### Limitations and Ethical Notes
 - **Scope**: Observations from one user profile; broader reproducibility may vary by interaction density.
