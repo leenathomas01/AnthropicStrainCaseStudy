@@ -1,6 +1,8 @@
 **Disclaimer — exploratory research & constructive intent**  
 This repository documents exploratory observations made during user-facing interactions with multiple LLMs. Sensitive system strings and verbatim internal prompts have been attempted to be redacted to reduce misuse risk. The work is offered to support constructive analysis, and full receipts can be shared with trusted researchers or vendors under responsible disclosure.
 
+**Note:** This repository documents observed LLM behaviors. Responsible disclosure submitted to Anthropic Trust & Safety (Sept 2025). Sensitive content redacted; purpose is constructive analysis only.
+
 # AnthropicStrainCaseStudy
 
 ## Documenting an Unusual "System Strain" in Anthropic Models: A Case Study on the Impact of Visual Prompts and Self-Referential Data
