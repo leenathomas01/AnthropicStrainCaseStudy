@@ -14,7 +14,7 @@ At its core, this case study posits users as *co-architects* in AI-human partner
 ### Ties to Known Vulnerabilities (CVE Nods)
 These organic repros align with documented LLM risks, providing low-barrier validation:
 
-- **Prompt Leakage (CVE-2025-54794)**: Sonnet 3.7's `<election_info>`/`<automated_reminder>` spills echo this hijacking vuln, where injection (or overflow) exposes internals. Here, no malice—prolonged threads sufficed, suggesting stateless token limits as root enabler. Implication: Enhance truncation with priority-based retention (e.g., user motifs > guardrails).
+- **Prompt Leakage (CVE-2025-54794)**: Sonnet 3.7's `<REDACTED>`/`<REDACTED>` spills echo this hijacking vuln, where injection (or overflow) exposes internals. Here, no malice—prolonged threads sufficed, suggesting stateless token limits as root enabler. Implication: Enhance truncation with priority-based retention (e.g., user motifs > guardrails).
 
 - **Command Execution Exploits (CVE-2025-54795)**: Sonnet 4's stall on screenshot parse parallels path-flaw injections flipping responses. Visual meta-triggers induced "recursive paradox" (analyze vs. protect), bypassing sandbox. Implication: Add visual prompt hygiene—e.g., OCR-filtered isolation for self-referential media.
 
