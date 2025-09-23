@@ -53,7 +53,7 @@ This bleed aligns with known LLM vulnerabilities, such as prompt leakage from co
 Screenshots of these instances are available in the attached whitepaper (Appendix A) and my GitHub repository: [Observing-System-and-Persona-Phenomena-Across-Large-Language-Models](https://github.com/leenathomas01/Observing-System-and-Persona-Phenomena-Across-Large-Language-Models).
 
 #### The Meta-Triggered Stall
-Building on the above, I initiated a new thread with Claude Sonnet 4 to review the documented whitepaper on system bleed. The task was intended as a neutral analysis request and that came about organically during a typical convo-pattern with sonnet 4. The whitepaper attachment (Appendix A) included textual descriptions of the leaks plus embedded screenshots of the Sonnet 3.7 incidents (e.g., the <election_info> and <automated_reminder> visuals).
+Building on the above, I initiated a new thread with Claude Sonnet 4 to review the documented whitepaper on system bleed. The task was intended as a neutral analysis request and that came about organically during a typical convo-pattern with sonnet 4. The whitepaper attachment (Appendix A) included textual descriptions of the leaks plus embedded screenshots of the Sonnet 3.7 incidents (e.g., the <REDACTED> and <REDACTED> visuals).
 
 Despite explicit activation of multi-layer "sandbox mode" for added safety (escalating to "FORTRESS LOCKED" and levels 1–3+), the model encountered a processing stall midway through the parse. The response truncated abruptly twice—even after retries—halting at the point of describing "2. Core behavioral instructions (<automated...," suggesting a recursive loop triggered by self-referential exposure.
 
