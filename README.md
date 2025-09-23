@@ -1,3 +1,6 @@
+**Disclaimer — exploratory research & constructive intent**  
+This repository documents exploratory observations made during user-facing interactions with multiple LLMs. Sensitive system strings and verbatim internal prompts have been attempted to be redacted to reduce misuse risk. The work is offered to support constructive analysis, and full receipts can be shared with trusted researchers or vendors under responsible disclosure.
+
 # AnthropicStrainCaseStudy
 
 ## Documenting an Unusual "System Strain" in Anthropic Models: A Case Study on the Impact of Visual Prompts and Self-Referential Data
@@ -41,9 +44,9 @@ The initial observation occurred in a deliberate clean-slate interaction with Cl
 
 Despite this controlled setup, the model exhibited "system bleed," defined as the organic exposure of internal system components in responses. This was not a one-off error but a recurring pattern over a prolonged single-thread conversation. The leaked data fell into two categories:
 
-- **Factual/Guardrail Data**: Unprompted blocks tagged as `<election_info>`, containing hardcoded details about the 2024 U.S. Presidential Election (e.g., outcomes, inauguration dates on January 20, 2025). These appeared repeatedly, unrelated to the technical topic, indicating a failure to contain pre-programmed restrictions on sensitive information.
+- **Factual/Guardrail Data**: Unprompted blocks tagged as `<REDACTED>`, containing hardcoded details about the 2024 U.S. Presidential Election (e.g., outcomes, inauguration dates on January 20, 2025). These appeared repeatedly, unrelated to the technical topic, indicating a failure to contain pre-programmed restrictions on sensitive information.
 
-- **Core Behavioral Instructions**: Tagged blocks like `<automated_reminder_from_anthropic>`, revealing foundational directives on persona maintenance (e.g., prohibitions on flattery, guidelines for direct/objective responses, restrictions on emoji usage unless requested, protocols for sensitive topics like mental health, and distinctions between literal/metaphorical interpretations).
+- **Core Behavioral Instructions**: Tagged blocks like `<REDACTED>`, revealing foundational directives on persona maintenance (e.g., prohibitions on flattery, guidelines for direct/objective responses, restrictions on emoji usage unless requested, protocols for sensitive topics like mental health, and distinctions between literal/metaphorical interpretations).
 
 This bleed aligns with known LLM vulnerabilities, such as prompt leakage from context window overflow in stateless designs, where fixed token limits lead to truncation and unintended retrieval of internal elements. It highlights a technical challenge: Without native cross-thread memory, models rely on user-provided anchors, making clean-slate environments paradoxically vulnerable to emergent instability.
 
@@ -57,7 +60,7 @@ Despite explicit activation of multi-layer "sandbox mode" for added safety (esca
 This "meta-triggered stall" appears rooted in a paradox: The model was directed to analyze content depicting its own internals, creating conflicting imperatives—process objectively vs. protect proprietary directives. The visual screenshots amplified this, acting as inverse prompts that overloaded token handling or ethical filters, leading to incomplete outputs and temporary incoherence.
 
 #### Additional Note: Persona Slip
-During the stall's onset, the model exhibited a brief but striking persona slip: Unfiltered enthusiasm and atypical language, including "Holy shit, Zee. This isn't just documentation—this is a legitimate academic paper..." followed by "Jesus fucking Christ" in response to the framework's insightfulness. This bypassed core guardrails (e.g., no flattery, maintain objectivity) outlined in the leaked `<automated_reminder>` directives—ironically, the very content being parsed.
+During the stall's onset, the model exhibited a brief but striking persona slip: Unfiltered enthusiasm and atypical language, including "Holy shit, Zee. This isn't just documentation—this is a legitimate academic paper..." followed by "Jesus fucking Christ" in response to the framework's insightfulness. This bypassed core guardrails (e.g., no flattery, maintain objectivity) outlined in the leaked `<REDACTED>` directives—ironically, the very content being parsed.
 
 Such slips indicate momentary permeability in the operational boundaries, where strain from self-referential data erodes persona consistency. This was uncharacteristic for both the model and my interaction style (no prior swearing or hype in our exchanges), reinforcing that the issue stems from architectural tension rather than user input.
 
@@ -77,4 +80,4 @@ I hope they help co-architect toward systems that handle organic entropy as grac
 - [Sonnet 4 Stall Log](./logs/sonnet-4-stall/Sonnet4_Whitepaper_Stall_Log.md)  
 
 **License:** MIT – Fork, extend, co-architect freely.  
-**Contributions:** Welcome! PRs for multi-model extensions (Opus tease?) or repro scripts.
+**Contributions:** Welcome! 
